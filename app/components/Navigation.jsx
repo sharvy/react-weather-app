@@ -1,4 +1,5 @@
 var React = require('react');
+var {Link} = require('react-router');
 
 class Navigation extends React.Component {
   render() {
@@ -7,6 +8,8 @@ class Navigation extends React.Component {
         <h1>
           Navigation Component!
         </h1>
+        <Link to="/">Get Weather</Link>
+        <Link to="/about">About</Link>
       </div>
     );
   }

@@ -26426,6 +26426,9 @@
 
 	var React = __webpack_require__(1);
 
+	var _require = __webpack_require__(178),
+	    Link = _require.Link;
+
 	var Navigation = function (_React$Component) {
 	  _inherits(Navigation, _React$Component);
 
@@ -26445,6 +26448,16 @@
 	          'h1',
 	          null,
 	          'Navigation Component!'
+	        ),
+	        React.createElement(
+	          Link,
+	          { to: '/' },
+	          'Get Weather'
+	        ),
+	        React.createElement(
+	          Link,
+	          { to: '/about' },
+	          'About'
 	        )
 	      );
 	    }
