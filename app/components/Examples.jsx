@@ -1,13 +1,11 @@
-var React = require('react');
+import React from 'react';
 
-class Examples extends React.Component {
-  render() {
-    return (
-      <div>
-        <h3>Examples Component!</h3>
-      </div>
-    );
-  }
-}
+var Examples = (props) => {
+  return (
+    <div>
+      <h3>Examples Component!</h3>
+    </div>
+  );
+};
 
-module.exports = Examples;
+export default Examples;

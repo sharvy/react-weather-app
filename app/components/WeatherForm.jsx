@@ -1,4 +1,4 @@
-var React = require('react');
+import React from 'react';
 
 class WeatherForm extends React.Component {
   onChangeLocation(e) {
@@ -19,4 +19,4 @@ class WeatherForm extends React.Component {
   }
 }
 
-module.exports = WeatherForm;
+export default WeatherForm;

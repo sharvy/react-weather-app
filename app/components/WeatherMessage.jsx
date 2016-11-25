@@ -1,15 +1,11 @@
-var React = require('react');
+import React from 'react';
 
-class WeatherMessage extends React.Component {
-  render() {
-    var {temp, location} = this.props;
+var WeatherMessage = ({temp, location}) => {
+  return (
+    <div>
+      <p>The temperature is {temp} in {location}</p>
+    </div>
+  );
+};
 
-    return (
-      <div>
-        <p>The temperature is {temp} in {location}</p>
-      </div>
-    );
-  }
-}
-
-module.exports = WeatherMessage;
+export default WeatherMessage;

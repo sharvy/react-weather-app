@@ -1,19 +1,17 @@
-var React = require('react');
-var {Link} = require('react-router');
+import React from 'react';
+import { Link } from 'react-router';
 
-class Navigation extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>
-          Navigation Component!
-        </h1>
-        <Link to="/">Get Weather</Link>
-        <Link to="/about">About</Link>
-        <Link to="/examples">Examples</Link>
-      </div>
-    );
-  }
-}
+var Navigation = (props) => {
+  return (
+    <div>
+      <h1>
+        Navigation Component!
+      </h1>
+      <Link to="/">Get Weather</Link>
+      <Link to="/about">About</Link>
+      <Link to="/examples">Examples</Link>
+    </div>
+  );
+};
 
-module.exports = Navigation;
+export default Navigation;

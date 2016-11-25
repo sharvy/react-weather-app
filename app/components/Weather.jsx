@@ -1,7 +1,7 @@
-var React           = require('react');
-var WeatherForm     = require('WeatherForm');
-var WeatherMessage  = require('WeatherMessage');
-var OpenWeatherMap  = require('OpenWeatherMap');
+import React from 'react';
+import WeatherForm from 'WeatherForm';
+import WeatherMessage from 'WeatherMessage';
+import OpenWeatherMap from 'OpenWeatherMap';
 
 class Weather extends React.Component {
   constructor(props) {
@@ -53,4 +53,4 @@ class Weather extends React.Component {
   }
 }
 
-module.exports = Weather;
+export default Weather;
